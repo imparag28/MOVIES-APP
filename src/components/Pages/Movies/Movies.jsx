@@ -15,6 +15,8 @@ export  function Movies() {
     }
     
 
+    
+
     useEffect(() => {
        fetchMoives()
     }, [page]);
