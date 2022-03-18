@@ -3,7 +3,7 @@ import axios from "axios"
 import { SignleContent } from "../../SingleContent/SingleContent"
 import { CustomPagination } from "../../Pagination/CustomPagination"
 import Genres from "../../Genres/Genres"
-import useGenre from "../../hooks/useGenre";
+
 export function Movies() {
 
     const [page, setpage] = useState(1);
@@ -35,7 +35,7 @@ export function Movies() {
                 setSelectedGenres={setSelectedGenres}
                 genres={genres}
                 setGenres={setGenres}
-                setPage={setPage}
+                setPage={setpage}
             />
             <div className="trending">
                 {
